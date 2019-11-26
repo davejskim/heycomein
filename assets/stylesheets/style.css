@@ -13,8 +13,14 @@ body {
 }
 
 footer {
-  padding: 2rem 5rem;
+  padding: 2rem 0;
   border-top: 2px solid #002b16;
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    padding: 3rem 0 2rem;
+  }
 }
 
 footer ul li {
@@ -101,6 +107,10 @@ li {
   left: 50%;
   margin-left: -50px !important;
 } */
+
+.nav-item {
+  padding: 0 1rem;
+}
 
 .nav-item:hover {
   text-decoration: underline;
