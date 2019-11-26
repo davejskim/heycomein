@@ -145,6 +145,22 @@ li {
   color: #fff;
   z-index: 1000;
 }
+
+/* vimeo-width customizing */
+.vimeo-container {
+  padding-bottom: 56.25%;
+}
+		
+.vimeo-container iframe,
+.embed-container object,
+.embed-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 .main_prod {
   width: 270px;
   height: 270px;
