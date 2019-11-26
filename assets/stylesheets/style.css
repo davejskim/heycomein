@@ -127,8 +127,8 @@ li {
   opacity: .9;
   filter: alpha(opacity=90);
   overflow: hidden;
-  padding: 0;
   position: relative;
+  padding-bottom: 56.25%;
 }
 
 @media screen and (max-width: 768px) {
@@ -147,13 +147,10 @@ li {
 }
 
 /* vimeo-width customizing */
-.vimeo-container {
-  padding-bottom: 56.25%;
-}
 		
 .vimeo-container iframe,
-.embed-container object,
-.embed-container embed {
+.vimeo-container object,
+.vimeo-container embed {
   position: absolute;
   top: 0;
   left: 0;
@@ -176,3 +173,14 @@ li {
   background-color: rgb(218,182,153, .8)
 }
 
+
+
+
+.footer-item {
+  font-size: .9rem
+}
+
+
+.footer-item a {
+  color: #212529;
+}
