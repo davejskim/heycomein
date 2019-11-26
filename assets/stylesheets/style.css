@@ -14,6 +14,7 @@ body {
 
 footer {
   padding: 2rem 5rem;
+  border-top: 2px solid #002b16;
 }
 
 footer ul li {
@@ -84,7 +85,7 @@ li {
 } */
 
 .navbar-hey {
-  border-bottom-width: 1px;
+  border-bottom-width: 2px;
   border-bottom-style: solid;
   border-bottom-color: #002b16;
   background-color: rgb(218,182,153, .8)
@@ -109,23 +110,31 @@ li {
   max-width: 140px;
 }
 
-.youtube-background {
-  background: #000;
-  position: fixed;
-  top: 59px; right: 0; bottom: 0; left: 0;
-  z-index: -99;
-}
-
-.youtube-foreground,
-.youtube-background iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
+.vimeo-container {
   width: 100%;
-  height: 100%;
-  pointer-events: none;
+  height: 600px;
+  background-color: #000;
+  opacity: .9;
+  filter: alpha(opacity=90);
+  overflow: hidden;
+  padding: 0;
+  position: relative;
 }
 
+@media screen and (max-width: 768px) {
+  .vimeo-container {
+    height: 400px;
+  }
+}
+
+.vimeo-container .vimeo-overlay {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  z-index: 1000;
+}
 .main_prod {
   width: 270px;
   height: 270px;
@@ -135,7 +144,7 @@ li {
   display: block;
   width: 100%;
   height: 10px;
-  border-top-width: 1px;
+  border-top-width: 2px;
   border-top-style: solid;
   border-top-color: #002b16;
   background-color: rgb(218,182,153, .8)
