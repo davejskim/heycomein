@@ -49,9 +49,20 @@
 
   <!-- BEGIN content -->
   <section class="container" id="about">
-    <div class="vimeo-container">
-      <iframe src="https://player.vimeo.com/video/375637153?autoplay=1&loop=1&title=0&byline=0&portrait=0&sidedock=0&controls=0" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <div class="vimeo-overlay">
+    <div class="video-container">
+      
+      <!-- BEGIN embedding vimeo -->
+      <!-- <iframe src="https://player.vimeo.com/video/375637153?autoplay=1&loop=1&title=0&byline=0&portrait=0&sidedock=0&controls=0" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
+      <!-- END embedding vimeo-->
+      
+      <!-- BEGIN importing video from asset files -->
+      <!--  -->
+      <video class="brand-film" autoplay loop muted playsinline>
+        <source src="assets/videos/brand_film_small.mp4" type="video/mp4" />
+      </video>
+      <!-- END importing video from asset files -->
+
+        <div class="video-overlay">
         <h3 class="text-center pb-4">HEY COME IN</h3>
         <p class="m-0">heycomein is a lifestyle brand</p>
         <p class="m-0">that pursues the refined comfort</p>

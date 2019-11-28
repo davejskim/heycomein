@@ -120,37 +120,43 @@ li {
   max-width: 140px;
 }
 
-.vimeo-container {
+.video-container {
+  position: relative;
   width: 100%;
   height: 600px;
-  background-color: #000;
+  background-color: rgba(0, 0, 0, 0.5);
   opacity: .9;
   filter: alpha(opacity=90);
   overflow: hidden;
-  position: relative;
   padding-bottom: 56.25%;
 }
 
-@media screen and (max-width: 768px) {
-  .vimeo-container {
-    height: 400px;
-  }
+.video-container .brand-film {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  object-fit: cover;
 }
 
-.vimeo-container .vimeo-overlay {
+
+.video-container .video-overlay {
   position: absolute;
-  top: 45%;
+  top: 47%;
   left: 50%;
   transform: translate(-50%, -50%);
   color: #fff;
   z-index: 1000;
 }
 
-/* vimeo-width customizing */
-		
-.vimeo-container iframe,
-.vimeo-container object,
-.vimeo-container embed {
+/* vimeo-width customizing */		
+.video-container iframe,
+.video-container object,
+.video-container video,
+.video-container embed {
   position: absolute;
   top: 0;
   left: 0;
