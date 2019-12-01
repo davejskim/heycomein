@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -23,15 +23,15 @@
   <!-- aos cdn -->
   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <!-- custom style -->
-  <link rel="stylesheet" type="text/css" href="assets/stylesheets/style.css">
-  <title>heycomein</title>
+  <link rel="stylesheet" type="text/css" href="/assets/stylesheets/style.css">
+  <title>about - heycomein</title>
 </head>
 <body>
   <!-- BEGIN navbar -->
   <nav class="navbar navbar-hey navbar-expand-lg fixed-top navbar-light">  
     <div class="container">
       <a class="navbar-brand" href="/">
-        <img src="assets/images/logo_small.png" class="d-inline-block align-middle logo" alt="로고">
+        <img src="/assets/images/logo_small.png" class="d-inline-block align-middle logo" alt="로고">
       </a>
       <!-- mobile collapse button-->
       <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,10 +43,10 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mx-auto">
           <li class="nav-item">
-            <a class="nav-link text-green" href="pages/about.html">about</a>
+            <a class="nav-link text-green" href="/pages/about.html">about</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-green" href="pages/collection.html">collection</a>
+            <a class="nav-link text-green" href="/pages/collection.html">collection</a>
           </li>
           <li class="nav-item">
             <a class="nav-link text-green" href="https://docs.google.com/forms/d/e/1FAIpQLSe8GTd5AUZNMLRJ2R9iopx2Ofb3-Kjv1SsJU6iLKIgGlTM0gQ/viewform" target="_blank">pre-order</a>
@@ -60,61 +60,61 @@
 
   <!-- BEGIN content -->
   <section class="container" id="about">
-    <div class="video-container">
-      
-      <!-- BEGIN embedding vimeo -->
-      <!-- <iframe src="https://player.vimeo.com/video/375637153?autoplay=1&loop=1&title=0&byline=0&portrait=0&sidedock=0&controls=0" width="100%" height="100%" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
-      <!-- END embedding vimeo-->
-      
-      <!-- BEGIN importing video from asset files -->
-      <!--  -->
-      <video class="brand-film" autoplay loop muted playsinline>
-        <source src="assets/videos/brand_film_small.mp4" type="video/mp4" />
-      </video>
-      <!-- END importing video from asset files -->
-
-        <div class="video-overlay">
-        <h3 class="text-center pb-4">HEY COME IN</h3>
-        <p class="m-0">heycomein is a lifestyle brand</p>
-        <p class="m-0">that pursues the refined comfort</p>
-        <p class="m-0">by adding more wit to daily life.</p>
-      </div>
+    <div class="image-container bg-collection">
+      <!-- BEGIN cover image -->
+      <!-- END cover image -->
     </div>
 
   </section>
 
-  <div class="container">
+  <div class="container" id="brandCollection">
     <div class="bg-white p-3 p-md-5">
-      <h3 class="pt-1 pb-4 text-center font-weight-bold">Into the For-Rest</h3>
-      <div class="px-5 text-center">
-        <p>Lifestyle brand heycomein's first collection, &lsaquo;Into the For-Rest&rsaquo; is the series of leaf cushions inspired by the various nature which is changing by seasons and regions.</p>
+      <h3 class="pt-2 pb-4 text-center font-weight-bold">Into the For-Rest</h3>
+      <!-- BEGIN pargraph 1/3-->
+      <div class="mt-3 px-5 text-center"
+           data-aos="fade-down" data-aos-duration="2000" data-aos-delay="50" data-aos-easing="ease-in-out">
+        <p class="mb-2 font-weight-bold">헤이컴인의 첫번째 컬랙션 &lsaquo;Into the For-Rest&rsaquo;는 계절과 지역에 따라 변화하는</p>
+        <p class="mb-2 f">자연에서 영감을 받아 제작된 나뭇잎 모양 쿠션입니다.</p>
       </div>
-      <div class="py-5">
-        <ul class="list-group list-group-horizontal-lg justify-content-center">
-          <li class="list-group-item mx-auto">
-            <img src="assets/images/01_bananaleaf.png" alt="bananaleaf cushion" class="main-prod"
-                 data-aos="fade-down" data-aos-duration="2000" data-aos-delay="50" data-aos-easing="ease-in-out">
-          </li>
-          <li class="list-group-item mx-auto">
-            <img src="assets/images/02_alocacia.png" alt="bananaleaf cushion" class="main-prod"
-                 data-aos="fade-down" data-aos-duration="2000" data-aos-delay="450" data-aos-easing="ease-in-out">
-          </li>
-          <li class="list-group-item mx-auto">
-            <img src="assets/images/03_maple.png" alt="bananaleaf cushion" class="main-prod"
-                 data-aos="fade-down" data-aos-duration="2000" data-aos-delay="850" data-aos-easing="ease-in-out">
-          </li>
-        </ul>
+      <!-- END pargraph 1/4 -->
+
+      <!-- BEGIN pargraph 2/4 -->
+      <div class="mt-5 px-5 text-center"
+           data-aos="fade-down" data-aos-duration="2000" data-aos-delay="450" data-aos-easing="ease-in-out">
+        <p class="mb-2">나의 일상에 싱그러움을 더해줄 나뭇잎 쿠션,</p>
+        <p class="mb-2">자연의 향기가 솔솔 나는 부드러운 나뭇잎 쿠션 속에서</p>
+        <p class="mb-2">진정한 편안함을 느껴보세요.</p>
       </div>
-      <div class="d-flex justify-content-center mb-3" id="preOrder">
-        <!-- BEGIN 준비중입니다 -->
-        <!-- <a href="void(0" target="_blank" onclick="alert('Pre-Order 링크를 준비중입니다. Pre-Order Link is Coming Soon');return false;"
-          class="btn btn-hey btn-green rounded-2 mt-4 mx-auto" role="button">Pre-Order</a> -->
-        <!-- END 준비중입니다 -->
-        <!-- BEGIN Pre-Order Link -->
-        <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8GTd5AUZNMLRJ2R9iopx2Ofb3-Kjv1SsJU6iLKIgGlTM0gQ/viewform" target="_blank"
-          class="btn btn-hey btn-green rounded-2 mt-4 mx-auto" role="button">Pre-Order</a>
-        <!-- END Pre-Order Link -->
+      <!-- END pargraph 2/4 -->
+
+      <!-- BEGIN pargraph 3/4 -->
+      <div class="mt-5 px-5 text-center"
+      data-aos="fade-down" data-aos-duration="2000" data-aos-delay="850" data-aos-easing="ease-in-out"> 
+        <p class="mb-2">원단 자체에 은은하게 배어있는 기분 좋은 피톤치드 향기,</p>
+        <p class="mb-2">지친 몸을 부드럽게 감싸는 매끄러운 감촉,</p>
+        <p class="mb-2">눈을 감으면 그려지는 푸르른 숲속이 일상에서 벗어난 특별한 경험을 선사합니다.</p>
       </div>
+      <!-- END pargraph 3/4 -->
+      
+      <!-- BEGIN pargraph 4/4 -->
+      <div class="mt-5 mb-5 px-5 text-center" 
+           data-aos="fade-down" data-aos-duration="2000" data-aos-delay="1650" data-aos-easing="ease-in-out">
+        <p class="mb-2">모든 나뭇잎 쿠션은 국산 브랜드의 원단과 부자재를 사용하여</p>
+        <p class="mb-2">국내 전문가들의 노하우와 손길을 담아 정성스럽게 자체제작합니다.</p>
+        <p class="mb-2">대량구매 및 입점 문의는 info@heycomein.com으로 연락주세요.</p>
+      </div>
+      <!-- END pargraph 4/4 -->
+      
+      <!-- <hr class="contact-divider">   -->
+
+      <!-- BEGIN contact -->
+      <!-- <div class="text-center contact mb-5">
+        <h4 class="mb-4 font-weight-bold">CONTACT</h4>
+        <p class="mb-2">info@heycomein.com</p>
+        <p class="mb-2">+82 10-4141-0631</p>
+      </div> -->
+      <!-- END contact -->
+
     </div>    
   </div>
   <!---END content -->
